@@ -1,0 +1,239 @@
+Gym Management Dashboard - Admin Panel Requirements
+Context: Build a comprehensive gym admin dashboard for daily operations management. As a gym owner with 20+ years of experience, I need a centralized command center to run my facility efficiently and make data-driven decisions.
+
+Dashboard Overview Section
+Real-Time Metrics Display (Top of Dashboard):
+
+Total active members count with percentage change from last month​
+
+Today's check-ins vs yesterday comparison​
+
+Monthly Recurring Revenue (MRR) with trend indicator​
+
+Pending payments count with total amount due​
+
+Today's revenue vs target progress bar​
+
+Member retention rate for current month​
+
+New signups this week with conversion rate​
+
+Member Management Section
+Member Overview Panel:
+
+Search bar with filters (active, expired, pending renewal, frozen accounts)​
+
+Quick stats: Active members, expiring this week, expired, payment pending​
+
+List view showing member name, photo, membership plan, expiry date, payment status, last check-in​
+
+Action buttons: View profile, send WhatsApp reminder, extend membership, freeze account​
+
+Member Details Page (accessible from list):
+
+Personal info, contact details, emergency contacts​
+
+Membership history with all past plans and renewals​
+
+Payment history with receipts download option​
+
+Attendance logs with check-in/out times and frequency analysis​
+
+Health assessments: BMI, body fat percentage, blood pressure, heart rate tracking over time​
+
+Assigned trainer and personal training sessions log​
+
+Notes section for special requirements or medical conditions​
+
+Financial Dashboard Section
+Revenue Analytics:
+
+Monthly revenue chart comparing last 6 months​
+
+Revenue breakdown by membership plans (pie chart)​
+
+Average Revenue Per Member (ARPM)​
+
+Payment collection rate percentage​
+
+Pending payments list with member names, amounts, due dates, and WhatsApp reminder buttons​
+
+Expense tracking: rent, utilities, equipment maintenance, staff salaries​
+
+Profit margin calculator with monthly comparisons​
+
+Payment Management:
+
+Process payment interface with member search​
+
+Payment method tracking (cash, card, UPI, online)​
+
+Invoice generation and printing​
+
+Automated receipt sending via WhatsApp/Email​
+
+Refund processing for cancellations​
+
+Membership Plans Management
+Plan Configuration Panel:
+
+Create/edit membership plans with duration options (1 month, 3 months, 6 months, 12 months)​
+
+Pricing tiers: Basic gym access, gym + group classes, premium (gym + classes + personal training)​
+
+Add-on services: diet consultation, personal training sessions​
+
+Discount management for renewals, referrals, bulk purchases​
+
+Plan comparison table showing features and pricing​
+
+Attendance & Check-In System
+Daily Attendance Dashboard:
+
+Today's check-ins list with timestamps​
+
+Peak hours heat map showing busiest times (hourly breakdown for last 7 days)​
+
+Weekly attendance trends with day-wise comparison​
+
+Member frequency analysis: regular (5+ days/week), moderate (3-4 days), irregular (1-2 days), inactive (0 days)​
+
+Manual check-in/out interface for reception desk​
+
+Absent member alerts for members not visiting for 7+ days​
+
+Class & Trainer Management
+Class Scheduling:
+
+Weekly calendar view of all group classes​
+
+Create class with date, time, trainer name, class type (yoga, Zumba, CrossFit), capacity limit​
+
+Enrollment tracking showing registered members vs capacity​
+
+Attendance marking for each class session​
+
+Popular class analysis showing most attended classes​
+
+Trainer Management:
+
+Trainer profiles with specializations and certifications​
+
+Assigned members and personal training schedules​
+
+Performance metrics: member retention under their supervision, satisfaction ratings​
+
+Shift scheduling and availability calendar​
+
+Equipment & Facility Management
+Equipment Tracking:
+
+Equipment inventory list with purchase dates and warranty info​
+
+Maintenance schedule with last serviced date and next due date​
+
+Usage tracking showing most and least used equipment​
+
+Repair log with vendor details and costs​
+
+WhatsApp Automation Panel
+Message Center:
+
+Pending payment reminders with scheduled send time​
+
+Membership expiry alerts (7 days before, 3 days before, expiry day)​
+
+Welcome messages for new members​
+
+Birthday wishes automation​
+
+Class reminder notifications​
+
+Message templates library with variable placeholders (Name, Amount, Date, Plan)​
+
+Sent message history with delivery status​
+
+Bulk message interface for announcements​
+
+Reports & Analytics Section
+Business Intelligence:
+
+Membership growth chart (month-over-month comparison for last 12 months)​
+
+Churn rate analysis with reasons for cancellations​
+
+Lead conversion rate from inquiries to paid members​
+
+Age and gender demographics pie charts​
+
+Peak season analysis showing busy and slow months​
+
+Member lifetime value calculation​
+
+Net Promoter Score (NPS) tracking from surveys​
+
+Export Options:
+
+Generate PDF reports for monthly performance reviews​
+
+Excel export for accounting purposes​
+
+Custom date range filtering for all reports​
+
+Notifications & Alerts
+Alert Center (Bell icon with badge counter):
+
+New member registrations requiring approval​
+
+Payments received today​
+
+Pending payment reminders to send​
+
+Equipment maintenance due​
+
+Low inventory alerts for consumables (towels, water bottles)​
+
+Staff leave requests​
+
+Settings & Configuration
+System Settings:
+
+Gym information: name, logo, address, contact details​
+
+Operating hours configuration​
+
+Tax settings and GST configuration​
+
+User roles and permissions (admin, receptionist, trainer)​
+
+WhatsApp API key integration​
+
+SMS gateway setup as backup​
+
+Email server configuration​
+
+Payment gateway integration (Razorpay, Stripe)​
+
+Technical Requirements:
+Use React.js or Next.js for frontend with responsive design​
+
+Node.js + Express.js for backend API​
+
+MongoDB for database with proper indexing for fast queries​
+
+JWT authentication with role-based access control​
+
+Charts using Chart.js or Recharts library​
+
+Date pickers and calendar components​
+
+Real-time updates using WebSockets or polling​
+
+Mobile-responsive design for tablet access at reception​
+
+Dark mode toggle option​
+
+Data export functionality (PDF, Excel, CSV)​
+
+Build with clean, modern UI using Tailwind CSS or Material-UI. Focus on making critical information visible at a glance while keeping detailed data just one click away. The dashboard should load in under 2 seconds and handle 500+ member records efficiently.
+
